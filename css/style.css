@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	background: #c5c5c8;
+	background: url(../img/main-bg.png) no-repeat;
+	background-size: cover;
+}
+
+.card {
+	margin: 7% auto;
+	padding: 20px;
+	height: 450px;
+	width: 750px;
+	border-radius: 10px;
+	background-color: #111A28;
+	box-shadow: 0 0 65px 0px rgba(0, 0, 0, 0.8);
+}
+
+.card__logo {
+	width: 65px;
+	outline: none;
+}
+
+.card__content {
+	height: 310px;
+	width: 600px;
+	margin: 0 auto;
+}
+
+.card__product {
+	width: 340px;
+	display: inline-block;
+}
+
+.card__photo {
+	height: 159px;
+	width: 329px;
+	margin: 80px 10px;
+}
+
+.card__color-variants {
+	text-align: center;
+}
+
+.card__color-circle {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 50px;
+	border: 2px solid transparent;
+
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;
+}
+
+.card__color-circle--blue {
+	background-color: #1f273f;
+}
+
+.card__color-circle--white {
+	background-color: #fff;
+}
+
+.card__color-circle--red {
+	background-color: #ed3333;
+}
+
+.card__color-circle--cyan {
+	background-color: #29e3ea;
+}
+
+.card__color-circle:hover,
+.card__color-circle:active,
+.card__color-circle.active,
+.card__color-circle:focus {
+	cursor: pointer;
+	border: 2px solid #fff;
+}
+
+.card__info {
+	float: right;
+	width: 200px;
+}
+
+.card__title {
+	color: #e1e1e1;
+	font-weight: 100;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.card__model {
+	color: rgba(225,225,225, 0.6);
+	font-weight: 100;
+	font-size: 14px;
+	margin-bottom: 25px;
+}
+
+.card__star-list {
+	padding-left: 0;
+}
+
+.card__star-item {
+	display: inline-block;
+}
+
+.fa-star {
+ 	color: #9da1a6;
+}
+
+.fa-star:hover,
+.fa-star:active,
+.fa-star:focus,
+.fa-star.current {
+	color: #f7bf16;
+	cursor: pointer;
+}
+
+.card__select {
+	height: 30px;
+	width: 70px;
+	outline: none;
+	background-color: transparent;
+	border: 1px solid #4f5560;
+	color: #e1e1e1;
+	font-size: 14px;
+	padding: 5px 12px;
+	position: relative;
+
+	-webkit-appearance: none;
+  	   -moz-appearance: none;
+  			appearance: none;
+}
+
+.styled-select {
+	display: inline-block;
+}
+
+.styled-select:after {
+	content: "";
+	display: block;
+	width: 11px;
+	height: 6px;
+	pointer-events: none;
+	position: relative;
+	background-image: url(../img/Rectangle.png);
+	right: -50px;
+	top: -17px;
+	background-repeat: no-repeat;
+}
+
+option[value=""][disabled] {
+	display: none;
+}
+
+option {
+	background-color: #202835;
+}
+
+.card__button {
+	width: 185px;
+	padding: 10px 50px;
+	background-color: #202835;
+	cursor: pointer;
+	color: #e1e1e1;
+	font-size: 14px;
+	margin-top: 30px;
+	border: 1px solid #4f5560;
+
+	-webkit-transition: background-color .25s linear;
+	   -moz-transition: background-color .25s linear;
+	    -ms-transition: background-color .25s linear;
+	     -o-transition: background-color .25s linear;
+	        transition: background-color .25s linear;
+}
+
+.card__button:hover,
+.card__button:active
+.card__button:focus {
+	background-color: transparent;
+}
