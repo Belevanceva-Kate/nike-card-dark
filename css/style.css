@@ -13,7 +13,14 @@ body {
 }
 
 .card {
-	margin: 7% auto;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	padding: 20px;
 	height: 450px;
 	width: 750px;
@@ -28,23 +35,37 @@ body {
 }
 
 .card__content {
-	height: 310px;
-	width: 600px;
+	height: 80%;
+	width: 100%;
 	margin: 0 auto;
+	font-size: 0;
 }
 
 .card__product {
-	width: 340px;
+	vertical-align: middle;
+	height: 100%;
+	width: 60%;
 	display: inline-block;
+	font-size: 14px;
+	position: relative;
 }
 
 .card__photo {
-	height: 159px;
-	width: 329px;
-	margin: 80px 10px;
+	max-width: 90%;
+	max-height: 90%;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	   -moz-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	     -o-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 
 .card__color-variants {
+	margin-top: 80%;
 	text-align: center;
 }
 
@@ -87,8 +108,12 @@ body {
 }
 
 .card__info {
-	float: right;
-	width: 200px;
+	vertical-align: middle;
+	height: 100%;
+	width: 40%;
+	display: inline-block;
+	font-size: 14px;
+	margin-left: calc(100% - 60% - 40%);
 }
 
 .card__title {
@@ -96,17 +121,23 @@ body {
 	font-weight: 100;
 	font-size: 30px;
 	margin-bottom: 15px;
+	margin-top: 0;
+	max-height: calc(1.15 * 30px * 3);
+	overflow: hidden;
 }
 
 .card__model {
 	color: rgba(225,225,225, 0.6);
 	font-weight: 100;
 	font-size: 14px;
-	margin-bottom: 25px;
+	max-height: calc(1.15 * 14px * 2);
+	overflow: hidden;
 }
 
 .card__star-list {
 	padding-left: 0;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 .card__star-item {
