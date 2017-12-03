@@ -75,7 +75,6 @@ body {
 	height: 15px;
 	border-radius: 50px;
 	border: 2px solid transparent;
-
 	-webkit-transition: all .25s linear;
 	   -moz-transition: all .25s linear;
 	    -ms-transition: all .25s linear;
@@ -166,27 +165,16 @@ body {
 	font-size: 14px;
 	padding: 5px 12px;
 	position: relative;
-
 	-webkit-appearance: none;
   	   -moz-appearance: none;
   			appearance: none;
+	background-image: url(../img/Rectangle.png);
+	background-position: calc(100% - 5px) center;
+	background-repeat: no-repeat;
 }
 
 .styled-select {
 	display: inline-block;
-}
-
-.styled-select:after {
-	content: "";
-	display: block;
-	width: 11px;
-	height: 6px;
-	pointer-events: none;
-	position: relative;
-	background-image: url(../img/Rectangle.png);
-	right: -50px;
-	top: -17px;
-	background-repeat: no-repeat;
 }
 
 option[value=""][disabled] {
